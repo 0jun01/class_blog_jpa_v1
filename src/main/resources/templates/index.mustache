@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<span> 여기 폴더 위치는 어떻게 될까요? </span>
+
+	{{#name}}
+		<p>안녕하세요, {{name}}님?</p>
+		<h2>{{age}}</h2>
+		<p>이메일은 {{{email}}} </p>
+		<ul>
+			{{#pwd}}
+			<li>{{.}}</li>
+			{{/pwd}}
+		</ul>
+	{{/name}}
+
+	{{^name}}
+		<p>이름이 없어요</p>
+	{{/name}}
+	
+</body>
+</html>
